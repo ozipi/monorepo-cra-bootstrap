@@ -8,7 +8,7 @@ cd /tmp
 # make the app
 create-react-app web
 # get rid of node modules and yarn.lock
-rm -rf web/node_modules yarn.lock
+rm -rf web/node_modules web/yarn.lock web/.git
 # move it to the workspaces
 mv web ./apps
 cd ./apps/web
@@ -37,7 +37,7 @@ console.log("exampleApp::test", test())
 last step
 ===
 cd monorepo-cra-bootstrap
-rm -rf node_modules core/node_modules views/node_modules native/node_modules web/node_modules
+rm -rf node_modules core/node_modules web/node_modules
 yarn
 ===
 
