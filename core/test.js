@@ -1,4 +1,5 @@
 function test() {
 	console.log('core::test')
 }
-export default test
+
+global.test = test
